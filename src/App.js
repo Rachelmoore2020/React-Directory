@@ -32,8 +32,8 @@ render() {
       )
     }
     else{
-    return (
-      <div className="container">
+    // return (
+      let container= <div className="container">
 
       {items.map(item => (
         
@@ -42,13 +42,14 @@ render() {
           <td><h4> {item.gender}</h4></td>
           <td><h4>{item.dob.age}</h4></td>
       </tr>
+      
+      ))}
       </div>
-
-      )
-    }
+    // )
 }
         return (
           <div className="App">
+            {container}
         <ReactBootStrap.Table striped bordered hover>
         <thead>
           <tr>
@@ -63,7 +64,7 @@ render() {
         )
         }
 
-
+      }
         
       
 export default App;
