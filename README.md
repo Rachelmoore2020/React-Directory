@@ -4,7 +4,7 @@
 
   ![License](https://img.shields.io/badge/License--blue.svg "License Badge")
   
-![react_directory](https://user-images.githubusercontent.com/68473729/106035511-354ae000-60a2-11eb-83a6-c8132183bcdd.gif)
+
 
 
     # Table of Contents
@@ -50,6 +50,7 @@ For questions about Node File Generator, visit my GitHub page:
     RachelMoore2020
 
 ## Demonstration:
+![react_directory](https://user-images.githubusercontent.com/68473729/106035511-354ae000-60a2-11eb-83a6-c8132183bcdd.gif)
   
   ## You may also contact me via email at:
   rachelmoore6822@gmail.com
