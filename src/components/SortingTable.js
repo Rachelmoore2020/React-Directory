@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { useTable, useSortBy } from 'react-table'
+import { useTable, useSortBy, useFilters } from 'react-table'
 import MOCK_DATA from './MOCK_DATA.json'
 import { COLUMNS } from './columns'
 import './table.css'
@@ -18,6 +18,7 @@ export const SortingTable = () => {
                columns,
                data
             },
+            useFilters,
             useSortBy)
     
     return (
@@ -27,9 +28,11 @@ export const SortingTable = () => {
                 <tr {...headerGroup.getHeaderGroupProps()}>
                     {headerGroup.headers.map((column => (
                          <th {...column.getHeaderProps(column.getSortByToggleProps())}>{column.render('Header')}
+                         
                          <span>
                              {column.isSorted ? (column.isSortedDesc ? ' 🔽' : ' 🔼') : ""}
                          </span>
+                         <div>{column.canFilter ? column.render('Filter') : null}</div>
                          </th>
                      )))
                     }

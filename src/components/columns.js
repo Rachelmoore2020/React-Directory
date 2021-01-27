@@ -1,23 +1,30 @@
+import { ColumnFilter } from "./ColumnFilter";
+
 export const COLUMNS = [
     {
         Header: 'Id',
-        accessor: 'id'
+        accessor: 'id',
+        Filter: ColumnFilter,
     },
     {
         Header: 'Name',
-        accessor: 'name'
+        accessor: 'name',
+        Filter: ColumnFilter,
     },
     {
         Header: 'Email',
-        accessor: 'email'
+        accessor: 'email',
+        Filter: ColumnFilter,
     },
     {
         Header: 'Gender',
-        accessor: 'gender'
+        accessor: 'gender',
+        Filter: ColumnFilter,
     },
     {
         Header: 'Age',
-        accessor: 'age'
+        accessor: 'age',
+        Filter: ColumnFilter,
     }
 
 ]
